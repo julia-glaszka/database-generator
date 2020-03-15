@@ -16,14 +16,19 @@
 
 ## Opis
 - Skrypt iteracyjnie wywołuje insert - wiem, na pewno da się lepiej, ale ten projekt powstał w jeden wieczór.
+- Można spokojnie wygenerować ok 1mln rekordów z wieloma różnymi polami.
+- Ma pełno podatności, kłopoty optymalizacyjne i brak autoryzacji. Przechowyuje hasło do usera db w stringu. Nie używaj tego do poważnych projektów, bardziej jako testowa duża baza danych.
 - w metodzie run() zakomentowane są  różne wywołania metody generateAndInsertMultipleData(int), przyjmuje ona ilość rekordów jakie mają zostać dodane w jednym insercie.
 ##Przykład #1
 generateAndInsertMultipleData(1) generuje:
 ```SQL 
-INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);```
+INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);
+```
 Baza ma bottlenecki i się przypycha przy takim podejsciu. Zwiększenie liczby dodanych rekordów w jednym insercie przyspiesza wypełnianie bazy, ale do pewnego momentu. Z tego co pamiętam, najoptymalniejsze (dla mojego laptopa), jest generateAndInsertMultipleData(4000).
+
 ##Przykład #2
 generateAndInsertMultipleData(5) generuje:
+
 ```SQL 
 INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...), (value1, value2, value3, ...), (value1, value2, value3, ...), (value1, value2, value3, ...), (value1, value2, value3, ...);
 ```
