@@ -18,6 +18,7 @@
 - Skrypt iteracyjnie wywołuje insert - wiem, na pewno da się lepiej, ale ten projekt powstał w jeden wieczór.
 - Można spokojnie wygenerować ok 1mln rekordów z wieloma różnymi polami.
 - Ma pełno podatności, kłopoty optymalizacyjne i brak autoryzacji. Przechowyuje hasło do usera db w stringu. Nie używaj tego do poważnych projektów, bardziej jako testowa duża baza danych.
+- Czasami baza ma problem z wygenerowaną datą i odrzuca taki rekord, nie wiem dlaczego, bo polecenie SQL wygląda normalnie. Zdarza to się bardzo rzadko.
 - w metodzie run() zakomentowane są  różne wywołania metody generateAndInsertMultipleData(int), przyjmuje ona ilość rekordów jakie mają zostać dodane w jednym insercie.
 ## Przykład #1
 generateAndInsertMultipleData(1) generuje:
