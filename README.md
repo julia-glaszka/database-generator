@@ -25,7 +25,8 @@ Baza ma bottlenecki i się przypycha przy takim podejsciu. Zwiększenie liczby d
 ##Przykład #2
 generateAndInsertMultipleData(5) generuje:
 ```SQL 
-INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...), (value1, value2, value3, ...), (value1, value2, value3, ...), (value1, value2, value3, ...), (value1, value2, value3, ...);```
+INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...), (value1, value2, value3, ...), (value1, value2, value3, ...), (value1, value2, value3, ...), (value1, value2, value3, ...);
+```
 
 
 
