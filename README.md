@@ -52,7 +52,7 @@ $TABLENAME = 'tabela'
 Jest to tablica przyjmująca zbiór tablic z nazwą kolumny i typem.
 $SCHEME = []
 
-###Przykład użycia　
+### Przykład użycia　
 
 ```php
 
