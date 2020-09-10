@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "handlebars": "^4.5.2"
+    "handlebars": "^4.5.3"
   },
   "devDependencies": {
     "bulma": "^0.8.0",
